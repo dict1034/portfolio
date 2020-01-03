@@ -1,11 +1,12 @@
-html, body {
-    width:100%;
-    height:100%;
-    margin:0;
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
 .nav {
-    border:bottom: 1px solid #EAEAEB;
+    border: bottom: 1px solid #EAEAEB;
     text-align: right;
     height: 70px;
     line-height: 70px;
@@ -14,24 +15,50 @@ html, body {
 
 .menu {
     margin: 0 30px 0 0;
-    background-color:#000000;
-    width:100%;
+    background-color: #000000;
+    width: 100%;
 }
 
 .menu a {
     text-decoration: none;
-    color:white;
+    color: white;
     margin: 0 25px;
     line-height: 70px;
     clear: right;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 label {
-    margin:0 40px 0 0;
+    margin: 0 40px 0 0;
     font-size: 26px;
     line-height: 70px;
     display: none;
-    width:26px;
+    width: 26px;
     float: right;
 }
 
@@ -40,25 +67,100 @@ label {
     display: none;
 }
 
+#ommig img {
+    width: 50%;
+}
+
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 150px 0 150px;
+}
+
+#ommig {
+    justify-content: center;
+}
+
+#section {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 230px;
+
+}
+
+#ommig .col_narrow {
+    flex-grow: 1;
+    flex-basis: 400px;
+    max-width: 400px;
+}
+
+#ommig .col_wide {
+    flex-grow: 2;
+    flex-basis: 700px;
+}
+
+
+
+/********* PORTFOLIO SIDE *********/
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#web,
+#UX,
+#animation,
+#indhold {
+    background-color: #de8080;
+    width: 250px;
+    text-align: center;
+    height: 260px;
+    width: 260px;
+    margin: 15px;
+    flex-grow: 1;
+    flex-basis: 230px;
+}
+
+
+
+
+
+
+
+/****** MEDIA QUERYS *******/
+
 
 @media only screen and (max-width:600px) {
-    label { display: block;
-      cursor:pointer;
+    label {
+        display: block;
+        cursor: pointer;
     }
 
     .menu {
         text-align: center;
-        width:100%;
-        display:none;
+        width: 100%;
+        display: none;
+        background-color: white;
     }
+
     .menu a {
         display: block;
-         border:bottom: 1px solid #EAEAEB;
-        margin:0;
+        border: bottom: 1px solid #EAEAEB;
+        margin: 0;
+        color: black;
+        height: 40px;
     }
 
     #toggle:checked + .menu {
-        display:block;
+        display: block;
+    }
+
+    #ommig img {
+        width: 100%;
     }
 
 }
