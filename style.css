@@ -13,6 +13,10 @@ body {
 
 }
 
+.nav a:hover {
+    color: #FFD9E6;
+}
+
 .menu {
     margin: 0 30px 0 0;
     background-color: #000000;
@@ -116,6 +120,7 @@ label {
     flex-grow: 1;
     margin: 2rem;
     margin-top: 0;
+    max-width: 700px;
 }
 
 
@@ -127,7 +132,7 @@ label {
     background-image: url(forside.png);
     background-size: cover;
     max-width: none;
-    background-position: 67% 10%;
+    background-position: 68% 10%;
 }
 
 
@@ -174,14 +179,67 @@ label {
     margin-bottom: 0;
 }
 
+#webside img {
+    width: 100%;
+
+    margin-top: 70px;
+}
+
+/******* UX SIDE ******/
+#uxside h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 0;
+}
 
 
+#uxside h2 {
+    font-size: 3.5rem;
+    color: #806C73;
+    margin-bottom: 0;
+}
+
+.uxprototype {
+    flex-basis: 300px;
+    align-content: center;
+    position: relative;
+    margin: 30px;
+}
 
 
+/******* ANIMATION SIDE ******/
+#animationside h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 0;
+}
 
 
+#animationside h2 {
+    font-size: 3.5rem;
+    color: #806C73;
+    margin-bottom: 0;
+}
+
+/******* INDHOLD SIDE ******/
+#indholdside h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 0;
+}
 
 
+#indholdside h2 {
+    font-size: 3.5rem;
+    color: #806C73;
+    margin-bottom: 0;
+}
+
+embed {
+    width: 700px;
+    height: 600px;
+    margin-top: 70px;
+}
 
 
 /********* PORTFOLIO SIDE *********/
@@ -204,13 +262,20 @@ label {
     margin: 15px;
     flex-grow: 1;
     flex-basis: 230px;
-    align-content: center;
 }
 
 #bokse {
     max-width: 1200px;
     margin: auto;
     margin-top: 230px;
+
+}
+
+#web,
+#UX,
+#animation,
+#indhold h1 {
+    text-align: center;
 
 }
 
@@ -222,6 +287,9 @@ label {
 
 
 /****** MEDIA QUERYS *******/
+
+
+
 
 
 @media only screen and (max-width:600px) {
@@ -253,4 +321,16 @@ label {
         width: 100%;
     }
 
+    .sidesectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 10px 0 10px;
+    }
+
+    embed {
+        width: 350px;
+        height: 250px;
+        margin-top: 10px;
+
+    }
 }
