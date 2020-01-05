@@ -44,12 +44,20 @@ a {
 }
 
 
-#animationside,
+#animationside a:visited {
+    color: black;
+}
+
+
 #indholdside a:visited {
     color: black;
 }
 
-#animationside,
+#animationside a:hover {
+    color: #7F002C;
+}
+
+
 #indholdside a:hover {
     color: #7F002C;
 }
@@ -244,6 +252,11 @@ label {
     margin-bottom: 0;
 }
 
+
+video {
+    width: 100%;
+    margin-top: 70px;
+}
 
 #indholdside h2 {
     font-size: 3.5rem;
