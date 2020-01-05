@@ -43,11 +43,14 @@ a {
 
 }
 
-#animationside a:visited {
+
+#animationside,
+#indholdside a:visited {
     color: black;
 }
 
-#animationside a:hover {
+#animationside,
+#indholdside a:hover {
     color: #7F002C;
 }
 
@@ -254,6 +257,10 @@ embed {
     margin-top: 70px;
 }
 
+#indholdside img {
+    width: 100%;
+    margin-top: 70px;
+}
 
 #indholdside a:hover {
     opacity: 0.7;
