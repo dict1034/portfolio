@@ -39,6 +39,16 @@ body {
 
 a {
     text-decoration: none;
+    font-family: 'Muli', sans-serif;
+
+}
+
+#animationside a:visited {
+    color: black;
+}
+
+#animationside a:hover {
+    color: #7F002C;
 }
 
 h1 {
@@ -58,7 +68,8 @@ h2 {
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Muli', sans-serif;
+
 }
 
 label {
@@ -120,7 +131,7 @@ label {
     flex-grow: 1;
     margin: 2rem;
     margin-top: 0;
-    max-width: 700px;
+    max-width: 650px;
 }
 
 
@@ -152,17 +163,6 @@ label {
     left: 60vw;
 }
 
-#splash h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 3rem;
-    color: #7F002C;
-    text-transform: uppercase;
-    text-decoration: none;
-    position: absolute;
-    top: 40vw;
-    left: 70vw;
-
-}
 
 /********** WEB SIDE **********/
 
@@ -181,8 +181,12 @@ label {
 
 #webside img {
     width: 100%;
-
     margin-top: 70px;
+}
+
+
+#webside a:hover {
+    opacity: 0.7;
 }
 
 /******* UX SIDE ******/
@@ -206,6 +210,15 @@ label {
     margin: 30px;
 }
 
+
+#uxside img {
+    width: 100%;
+    margin-top: 70px;
+}
+
+#uxside a:hover {
+    opacity: 0.7;
+}
 
 /******* ANIMATION SIDE ******/
 #animationside h1 {
@@ -242,6 +255,11 @@ embed {
 }
 
 
+#indholdside a:hover {
+    opacity: 0.7;
+}
+
+
 /********* PORTFOLIO SIDE *********/
 
 #container {
@@ -271,6 +289,8 @@ embed {
 
 }
 
+
+
 #web,
 #UX,
 #animation,
@@ -279,11 +299,98 @@ embed {
 
 }
 
-/*
-#bokse img {
-    width: 100%;
-}*/
+/********* STYLE TILE ********/
 
+#boksestyletile {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 230px;
+}
+
+
+#farver img {
+    width: 100%;
+}
+
+
+#favi img {
+    width: 250px;
+    height: 250px;
+    padding-top: 15px;
+}
+
+
+
+#styletilealt h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#styletilealt h2 {
+    font-size: 3.5rem;
+    color: #806C73;
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+
+#typografi h1 {
+    font-size: 5rem;
+    margin-bottom: 0;
+    /*    margin-left: 15px;*/
+}
+
+#typografi h2 {
+    font-size: 3.5rem;
+    color: #806C73;
+    margin-bottom: 0;
+    /*    margin-left: 15px;*/
+}
+
+#farve1 {
+    background-color: #806C73;
+    height: 200px;
+    width: 250px;
+    margin: 15px;
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+#farve2 {
+    background-color: #FF8CB4;
+    height: 200px;
+    width: 250px;
+    margin: 15px;
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+#farve3 {
+    background-color: #FFD9E6;
+    height: 200px;
+    width: 250px;
+    margin: 15px;
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+#farve4 {
+    background-color: #7F002C;
+    height: 200px;
+    width: 250px;
+    margin: 15px;
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+#farve5 {
+    background-color: #CCADB8;
+    height: 200px;
+    width: 250px;
+    margin: 15px;
+    flex-grow: 1;
+    flex-basis: 200px;
+}
 
 
 /****** MEDIA QUERYS *******/
