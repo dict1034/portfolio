@@ -10,8 +10,6 @@ body {
     text-align: right;
     height: 70px;
     line-height: 70px;
-
-
 }
 
 .nav a:hover {
@@ -20,7 +18,7 @@ body {
 
 .menu {
     margin: 0 30px 0 0;
-    background-color: #000000;
+    background-color: black;
     width: 100%;
     position: fixed;
 }
@@ -179,7 +177,7 @@ label {
     background-image: url(forside.png);
     background-size: cover;
     max-width: none;
-    background-position: 68% 10%;
+    background-position: 66.5% 10%;
 }
 
 
@@ -199,6 +197,7 @@ label {
     left: 60vw;
 }
 
+#CV {}
 
 /********** WEB SIDE **********/
 
@@ -322,11 +321,13 @@ embed {
     text-align: center;
 }
 
+/*
 #pil {
     position: fixed;
     top: 120px;
     left: 45px;
 }
+*/
 
 #web,
 #UX,
@@ -454,48 +455,72 @@ embed {
 /****** MEDIA QUERYS *******/
 
 
-
-
-
-@media only screen and (max-width:600px) {
-    label {
-        display: block;
-        cursor: pointer;
-    }
-
-    .menu {
-        text-align: center;
-        width: 100%;
-        display: none;
-        background-color: white;
-    }
-
-    .menu a {
-        display: block;
-        border: bottom: 1px solid #EAEAEB;
-        margin: 0;
-        color: black;
-        height: 40px;
-    }
-
-    #toggle:checked + .menu {
-        display: block;
-    }
-
-    #ommig img {
-        width: 100%;
-    }
-
-    .sidesectionwrapper {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0px 10px 0 10px;
-    }
-
+@media only screen and (max-width:900px) {
     embed {
-        width: 350px;
-        height: 250px;
+        width: 550px;
+        height: 450px;
         margin-top: 10px;
-
     }
-}
+
+
+
+    @media only screen and (max-width:700px) {
+        label {
+            display: block;
+            cursor: pointer;
+        }
+
+        #webside img {
+            margin-top: 0px;
+        }
+
+        #indholdside img {
+            margin-top: 0px;
+        }
+
+        #uxside img {
+            margin-top: 0px;
+        }
+
+
+        .menu {
+            text-align: center;
+            width: 100%;
+            display: none;
+            background-color: black;
+            padding-bottom: 30px;
+        }
+
+        .menu a {
+            display: block;
+            border: bottom: 1px solid #EAEAEB;
+            margin: 0;
+            color: white;
+            height: 40px;
+        }
+
+        .nav a:hover {
+            color: #FFD9E6;
+        }
+
+        #toggle:checked + .menu {
+            display: block;
+        }
+
+        #ommig img {
+            width: 100%;
+        }
+
+        .sidesectionwrapper {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px 10px 0 10px;
+        }
+
+        embed {
+            width: 350px;
+            height: 250px;
+            margin-top: 10px;
+
+        }
+    }
