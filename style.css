@@ -44,12 +44,16 @@ a {
 }
 
 
-#animationside a:visited {
+#indholdside a:visited {
     color: black;
 }
 
 
-#indholdside a:visited {
+#indholdside a:hover {
+    color: #7F002C;
+}
+
+#animationside a:visited {
     color: black;
 }
 
@@ -57,10 +61,15 @@ a {
     color: #7F002C;
 }
 
+#webside a:visited {
+    color: black;
+}
 
-#indholdside a:hover {
+#webside a:hover {
     color: #7F002C;
 }
+
+
 
 h1 {
     font-family: 'Oswald', sans-serif;
@@ -288,6 +297,12 @@ embed {
     justify-content: space-around;
     flex-wrap: wrap;
     text-align: center;
+}
+
+#pil {
+    position: fixed;
+    top: 120px;
+    left: 45px;
 }
 
 #web,
