@@ -198,8 +198,6 @@ label {
     left: 60vw;
 }
 
-#CV {}
-
 /********** WEB SIDE **********/
 
 #webside h1 {
@@ -218,14 +216,10 @@ label {
     justify-content: center;
 }
 
-/*
-#web,
-#ux,
-#animation,
-#indhold h1 {
-    padding-top: 30px;
+#statemachine img {
+    width: 100%;
 }
-*/
+
 
 #webside h2 {
     font-size: 3.5rem;
