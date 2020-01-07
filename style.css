@@ -334,6 +334,7 @@ embed {
     left: 45px;
     height: 80px;
     width: 80px;
+    visibility: visible;
 }
 
 #web,
@@ -491,6 +492,10 @@ embed {
         height: 450px;
         margin-top: 10px;
     }
+
+    #pil {
+        visibility: hidden;
+    }
 }
 
 
@@ -499,6 +504,10 @@ embed {
     label {
         display: block;
         cursor: pointer;
+    }
+
+    #pil {
+        visibility: hidden;
     }
 
     #webside img {
