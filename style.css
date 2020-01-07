@@ -21,6 +21,7 @@ body {
     background-color: black;
     width: 100%;
     position: fixed;
+    z-index: 2;
 }
 
 .menu a {
@@ -123,6 +124,8 @@ label {
 #ommig img {
     width: 50%;
 }
+
+
 
 
 .sectionwrapper {
@@ -260,19 +263,14 @@ label {
     flex-basis: 300px;
     align-content: center;
     position: relative;
-    margin: 30px;
+    /*    margin: 30px;*/
 
 }
 
-/*
-.uxprototype img {
-    height: 50%;
 
-}
-*/
 
 #uxside img {
-    width: 100%;
+    width: 70%;
     margin-top: 70px;
 }
 
@@ -398,6 +396,8 @@ embed {
 
 
 
+#styletilealt {}
+
 #styletilealt h1 {
     font-size: 5rem;
     text-align: center;
@@ -501,6 +501,10 @@ embed {
         margin-top: 0px;
     }
 
+    #ommig .sectionwrapper {
+        margin: 10px 10px 0 10px;
+    }
+
 
     .menu {
         text-align: center;
@@ -508,11 +512,12 @@ embed {
         display: none;
         background-color: black;
         padding-bottom: 30px;
+
     }
 
     .menu a {
         display: block;
-        border-bottom: 1px solid #EAEAEB;
+        /*        border-bottom: 1px solid #EAEAEB;*/
         margin: 0;
         color: white;
         height: 40px;
