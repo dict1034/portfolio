@@ -6,7 +6,7 @@ body {
 }
 
 .nav {
-    border: bottom: 1px solid #EAEAEB;
+    border-bottom: 1px solid #EAEAEB;
     text-align: right;
     height: 70px;
     line-height: 70px;
@@ -207,6 +207,24 @@ label {
     margin-bottom: 0;
 }
 
+
+#bokse #container #web,
+#UX,
+#animation,
+#indhold {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+#web,
+#ux,
+#animation,
+#indhold h1 {
+    padding-top: 30px;
+}
+*/
 
 #webside h2 {
     font-size: 3.5rem;
@@ -461,66 +479,67 @@ embed {
         height: 450px;
         margin-top: 10px;
     }
+}
 
 
 
-    @media only screen and (max-width:700px) {
-        label {
-            display: block;
-            cursor: pointer;
-        }
-
-        #webside img {
-            margin-top: 0px;
-        }
-
-        #indholdside img {
-            margin-top: 0px;
-        }
-
-        #uxside img {
-            margin-top: 0px;
-        }
-
-
-        .menu {
-            text-align: center;
-            width: 100%;
-            display: none;
-            background-color: black;
-            padding-bottom: 30px;
-        }
-
-        .menu a {
-            display: block;
-            border: bottom: 1px solid #EAEAEB;
-            margin: 0;
-            color: white;
-            height: 40px;
-        }
-
-        .nav a:hover {
-            color: #FFD9E6;
-        }
-
-        #toggle:checked + .menu {
-            display: block;
-        }
-
-        #ommig img {
-            width: 100%;
-        }
-
-        .sidesectionwrapper {
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0px 10px 0 10px;
-        }
-
-        embed {
-            width: 350px;
-            height: 250px;
-            margin-top: 10px;
-
-        }
+@media only screen and (max-width:700px) {
+    label {
+        display: block;
+        cursor: pointer;
     }
+
+    #webside img {
+        margin-top: 0px;
+    }
+
+    #indholdside img {
+        margin-top: 0px;
+    }
+
+    #uxside img {
+        margin-top: 0px;
+    }
+
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        background-color: black;
+        padding-bottom: 30px;
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+        color: white;
+        height: 40px;
+    }
+
+    .nav a:hover {
+        color: #FFD9E6;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+    #ommig img {
+        width: 100%;
+    }
+
+    .sidesectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 10px 0 10px;
+    }
+
+    embed {
+        width: 350px;
+        height: 250px;
+        margin-top: 10px;
+
+    }
+}
