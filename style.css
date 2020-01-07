@@ -334,13 +334,13 @@ embed {
     text-align: center;
 }
 
-/*
 #pil {
     position: fixed;
     top: 120px;
     left: 45px;
+    height: 100px;
+    width: 100px;
 }
-*/
 
 #web,
 #UX,
@@ -391,9 +391,6 @@ embed {
     padding-top: 15px;
 }
 
-
-
-#styletilealt {}
 
 #styletilealt h1 {
     font-size: 5rem;
@@ -526,6 +523,9 @@ embed {
         margin: 10px 10px 0 10px;
     }
 
+    #styletilealt .sectionwrapper {
+        margin: 10px 10px 0 10px;
+    }
 
     .menu {
         text-align: center;
