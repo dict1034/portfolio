@@ -331,9 +331,9 @@ embed {
 #pil {
     position: fixed;
     top: 120px;
-    left: 45px;
-    height: 80px;
-    width: 80px;
+    left: 53px;
+    height: 70px;
+    width: 70px;
     visibility: visible;
 }
 
@@ -473,7 +473,7 @@ embed {
     }
 
     50% {
-        transform: scale(1.06, 1.06);
+        transform: scale(1.03, 1.03);
     }
 
     100% {
@@ -486,21 +486,18 @@ embed {
 /****** MEDIA QUERYS *******/
 
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:992px) {
     embed {
         width: 550px;
         height: 450px;
         margin-top: 10px;
     }
 
-    #pil {
-        visibility: hidden;
-    }
 }
 
 
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:600px) {
     label {
         display: block;
         cursor: pointer;
